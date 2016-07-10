@@ -5,7 +5,7 @@
 
 ### Contributors
 * Sam Machin
-* 
+* Konstantin Schubert
 * Surojit Banerjee
  
 ---
