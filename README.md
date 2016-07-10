@@ -26,7 +26,9 @@ Feedback, Comments, Contribution are welcome.
 6. Send back response to Audio player
 7. Stream Video
 8. Streaming Image Recognition
-9. Contextual Information/Notification - Like a helper for the Visually Challenged, Elderly, Patients under care and specially Inquisitive Kids like Jini :)
+9. Contextual Information/Notification
+
+Helper for the Visually Challenged, Elderly, Patients under care and specially Inquisitive Kids like Jini
 ---
  
 ### Requirements
