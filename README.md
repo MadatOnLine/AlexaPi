@@ -47,7 +47,7 @@ Make a note of these credentials you will be asked for them during the install p
 
 ### Installation
 Clone this repo to the Pi    
-`git clone https://github.com/MadatOnLine/AlexaPi.git`
+`git clone https://github.com/MadatOnLine/JiniPi.git`
 
 Run the setup script         
 `./setup.sh`
@@ -56,11 +56,13 @@ Run the setup script
 
 If your alexa isn't running on startup you can check /var/log/alexa.log for errrors.
 
-If the error is complaining about alsaaudio you may need to check the name of your soundcard input device, use `arecord -L` 
+If the error is complaining about alsaaudio you may need to check the name of your soundcard input device, 
+use `arecord -L` 
 
 The device name can be set in the settings at the top of main.py 
 
-You may need to adjust the volume and/or input gain for the microphone, you can do this with `alsamixer`
+You may need to adjust the volume and/or input gain for the microphone, you can do this 
+with `alsamixer`
 
 ### Advanced Install
 For those of you that prefer to install the code manually or tweak things here's a few pointers...
