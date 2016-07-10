@@ -14,6 +14,7 @@ This is a Raspberry Pi project named after my niece Jini. She has the gift of "c
 Speech Recognition -> Image Recognition -> [multiple engines] -> Voice Interface
 
 Can use Sirius, Watson, Oxford, OpenCV and Baidu's Open ML one day to really make a multi-purpose module.
+Can be a helper for the Visually Challenged, Elderly, Patients under care and specially for Inquisitive Kids like Jini
 
 Feedback, Comments, Contribution are welcome.
 
@@ -27,8 +28,6 @@ Feedback, Comments, Contribution are welcome.
 7. Stream Video
 8. Streaming Image Recognition
 9. Contextual Information/Notification
-
-Helper for the Visually Challenged, Elderly, Patients under care and specially Inquisitive Kids like Jini
 ---
  
 ### Requirements
