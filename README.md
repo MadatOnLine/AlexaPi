@@ -1,10 +1,11 @@
 # JiniPi
  
 ---
-## 07/08/2016 - Adding Silence detector to stop recording. 
+07/08/2016 - Adding Silence detector to stop recording. 
 
 ### Contributors
 * Sam Machin
+* 
 * Surojit Banerjee
  
 ---
@@ -29,22 +30,27 @@ You need to create a new product type as a Device, for the ID use something like
 Make a note of these credentials you will be asked for them during the install process
 
 ### Installation
-Boot your fresh Pi and login to a command prompt as root.
-Make sure you are in /root
-Clone this repo to the Pi    `git clone https://github.com/MadatOnLine/AlexaPi.git`
-Run the setup script         `./setup.sh`
+Clone this repo to the Pi    
+`git clone https://github.com/MadatOnLine/AlexaPi.git`
+
+Run the setup script         
+`./setup.sh`
 
 ### Issues/Bugs etc.
 
 If your alexa isn't running on startup you can check /var/log/alexa.log for errrors.
+
 If the error is complaining about alsaaudio you may need to check the name of your soundcard input device, use `arecord -L` 
+
 The device name can be set in the settings at the top of main.py 
 
 You may need to adjust the volume and/or input gain for the microphone, you can do this with `alsamixer`
 
 ### Advanced Install
 For those of you that prefer to install the code manually or tweak things here's a few pointers...
+
 The Amazon AVS credentials are stored in a file called creds.py which is used by auth_web.py and main.py, there is an example with blank values.
+
 The auth_web.py is a simple web server to generate the refresh token via oAuth to the amazon users account, it then appends this to creds.py and displays it on the browser.
 
 main.py is the 'main' alexa client it simply runs on a while True loop waiting for the button to be pressed, it then records audio and when the button is released it posts this to the AVS service using the requests library, When the response comes back it is played back using mpg123 via an os system call, The 1sec.mp3 file is a 1second silent MP3) I found that my soundcard/pi was clipping the beginning of audio files and i was missing the first bit of the response so this is there to pad the audio.
