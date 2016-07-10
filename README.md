@@ -10,10 +10,23 @@
  
 ---
 This is a Raspberry Pi project named after my niece Jini. She has the gift of "communication".
+
 Speech Recognition -> Image Recognition -> [multiple engines] -> Voice Interface
+
 Can use Sirius, Watson, Oxford, OpenCV and Baidu's Open ML one day to really make a multi-purpose module.
 
 Feedback, Comments, Contribution are welcome.
+
+###Future Plan:
+1. Face Recognition with OpenCV
+2. Register new User. Welcome known user. Load User Ref/context
+3. Translate speech to English
+4. Use Alexa
+5. Translate speech to Users Language
+6. Send back response to Audio player
+7. Stream Video
+8. Streaming Image Recognition
+9. Contextual Information/Notification - Like a helper for the Visually Challenged, Elderly, Patients under care and specially Inquisitive Kids like Jini :)
 ---
  
 ### Requirements
