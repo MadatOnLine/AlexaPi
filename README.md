@@ -55,13 +55,19 @@ Run the setup script
 Adding Start/Restart
 
 $ sudo nano alexa.sh
+
 result=`ps aux | grep -i "main.py" | grep -v "grep" | wc -l`
+
 if [ $result -lt 1 ]
+
 then
+
 sudo /home/pi/AlexaPi/main.py &
+
 fi
 
 $ crontab -e
+
 * * * * * sh /home/pi/alexa.sh
 
 ### Issues/Bugs etc.
